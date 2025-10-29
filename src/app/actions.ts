@@ -7,8 +7,9 @@ export async function handleConsultation(input: AIPoweredConsultationInput): Pro
   try {
     const result = await aiPoweredConsultation(input);
     return { data: result, error: null };
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error in AI consultation:", error);
-    return { data: null, error: "An unexpected error occurred. Please try again later." };
+    // Return the specific error message instead of a generic one
+    return { data: null, error: error.message || "An unexpected error occurred. Please try again later." };
   }
 }
