@@ -247,7 +247,7 @@ export default function Home() {
           </div>
           <Card className="shadow-lg">
             <CardHeader>
-              <CardTitle className="font-headline text-2xl">Free AI Consultation</CardTitle>
+              <CardTitle className="font-headline text-2xl">Nexora Consultation</CardTitle>
               <CardDescription>Tell us about your business, and our AI will suggest solutions.</CardDescription>
             </CardHeader>
             <CardContent>

@@ -16,7 +16,7 @@ import {
 const navLinks = [
   { href: '#services', label: 'Services' },
   { href: '#showcase', label: 'About' },
-  { href: '#consultation', label: 'AI Consultation' },
+  { href: '#consultation', label: 'Nexora Consultation' },
   { href: '#testimonials', label: 'Testimonials' },
   { href: '#contact', label: 'Contact' },
 ];

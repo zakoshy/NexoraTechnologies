@@ -121,7 +121,7 @@ export function AiConsultationForm() {
         <AlertDialog open={isResultOpen} onOpenChange={setIsResultOpen}>
           <AlertDialogContent>
             <AlertDialogHeader>
-              <AlertDialogTitle>AI-Powered Recommendation</AlertDialogTitle>
+              <AlertDialogTitle>Nexora Recommendation</AlertDialogTitle>
               <AlertDialogDescription className="text-foreground whitespace-pre-wrap py-4">
                 {result.recommendations}
               </AlertDialogDescription>
