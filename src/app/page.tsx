@@ -71,25 +71,74 @@ const services = [
 
 const testimonials = [
   {
-    name: 'Sarah L.',
-    title: 'CEO, Startup Inc.',
+    name: 'Jomo K.',
+    title: 'Founder, Safari Ventures',
     quote:
-      "Nexora Technologies transformed our vision into a stunning, functional web app. Their team's expertise and professionalism were evident from start to finish. Truly a next-generation partner.",
-    avatar: 'https://picsum.photos/seed/avatar1/40/40',
+      "Nexora Technologies brought our app idea to life with incredible speed and precision. Their understanding of the local market is unmatched. We saw a 40% increase in user engagement.",
+    avatar: 'https://picsum.photos/seed/jomo/40/40',
   },
   {
-    name: 'Michael B.',
-    title: 'Marketing Director, Enterprise Corp.',
+    name: 'Wanjiru M.',
+    title: 'Director, Maasai Market Online',
     quote:
-      'The custom business tools they built for us have revolutionized our workflow, saving us countless hours. The impact on our bottom line was immediate and significant.',
-    avatar: 'https://picsum.photos/seed/avatar2/40/40',
+      "The e-commerce platform Nexora built for us is robust, secure, and easy to manage. Our sales have doubled since launch. Their team is professional and always available to help.",
+    avatar: 'https://picsum.photos/seed/wanjiru/40/40',
   },
   {
-    name: 'Jessica P.',
-    title: 'Freelance Designer',
+    name: 'Kamau N.',
+    title: 'Photographer',
     quote:
-      'I was looking for a way to showcase my portfolio, and Nexora delivered. The platform is intuitive, beautiful, and has helped me land bigger clients. Highly recommended!',
-    avatar: 'https://picsum.photos/seed/avatar3/40/40',
+      "My new portfolio website is simply stunning. It's fast, visually appealing, and has helped me attract international clients. I couldn't be happier with the result.",
+    avatar: 'https://picsum.photos/seed/kamau/40/40',
+  },
+  {
+    name: 'Akinyi O.',
+    title: 'CEO, AgriTech Solutions',
+    quote:
+      "The custom analytics dashboard developed by Nexora gives us real-time insights into our operations across the country. It's an invaluable tool for our growth.",
+    avatar: 'https://picsum.photos/seed/akinyi/40/40',
+  },
+  {
+    name: 'Mutua K.',
+    title: 'Owner, Nairobi Coffee House',
+    quote:
+      "Our new POS system is a game-changer. It has streamlined our inventory and sales process, reducing errors and saving us time. Highly recommend Nexora's services.",
+    avatar: 'https://picsum.photos/seed/mutua/40/40',
+  },
+  {
+    name: 'Nyambura G.',
+    title: 'Manager, Kanga Textiles',
+    quote:
+      "The client portal is fantastic. It has improved communication with our B2B partners and made order tracking seamless. A very professional and well-executed project.",
+    avatar: 'https://picsum.photos/seed/nyambura/40/40',
+  },
+  {
+    name: 'Kiprono C.',
+    title: 'Co-founder, EdTech Innovators',
+    quote:
+      "Nexora's team provided a comprehensive digital strategy that aligned perfectly with our goals. Their AI consultation was spot on, guiding us to the right solutions.",
+    avatar: 'https://picsum.photos/seed/kiprono/40/40',
+  },
+  {
+    name: 'Fatuma A.',
+    title: 'Logistics Head, Coastline Freight',
+    quote:
+      "The custom logistics tool has optimized our routing and scheduling, leading to significant cost savings. Nexora's expertise in building business tools is top-notch.",
+    avatar: 'https://picsum.photos/seed/fatuma/40/40',
+  },
+  {
+    name: 'Baraka S.',
+    title: 'Artist & Designer',
+    quote:
+      "From the first consultation to the final launch, the experience was smooth and collaborative. They understood my artistic vision for my digital presence perfectly.",
+    avatar: 'https://picsum.photos/seed/baraka/40/40',
+  },
+  {
+    name: 'Imani W.',
+    title: 'Director, Tausi Beauty',
+    quote:
+      "Our web app has received amazing feedback for its design and usability. Nexora Technologies delivered a world-class product that represents our brand beautifully.",
+    avatar: 'https://picsum.photos/seed/imani/40/40',
   },
 ];
 
