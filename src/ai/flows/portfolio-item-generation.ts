@@ -31,9 +31,9 @@ const portfolioItemPrompt = ai.definePrompt({
   name: 'portfolioItemPrompt',
   input: {schema: PortfolioItemInputSchema},
   output: {schema: PortfolioItemOutputSchema},
-  prompt: `You are an AI assistant helping portfolio managers generate content for their portfolio.
+  prompt: `You are an AI assistant helping a creative professional generate content for their portfolio.
 
-  Based on the following prompt, generate a title, detailed description, and representative image URL for a portfolio item.
+  Based on the following prompt, generate a compelling title, a detailed description, and a placeholder image URL for a new portfolio item.
 
   Prompt: {{{prompt}}}
   `,
