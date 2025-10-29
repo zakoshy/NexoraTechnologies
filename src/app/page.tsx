@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import {
   Blocks,
-  BrainCircuit,
   CodeXml,
   LayoutTemplate,
   BarChart,
@@ -18,7 +17,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { AiConsultationForm } from '@/components/ai-consultation-form';
 import {
   Carousel,
   CarouselContent,
@@ -169,7 +167,7 @@ export default function Home() {
           </p>
           <div className="mt-8 flex gap-4">
             <Button asChild size="lg" className="font-semibold">
-              <Link href="#consultation">Get a Free Consultation</Link>
+              <Link href="#contact">Get a Quote</Link>
             </Button>
             <Button asChild size="lg" variant="secondary" className="font-semibold">
               <Link href="#services">Our Services</Link>
@@ -227,33 +225,6 @@ export default function Home() {
               />
             )}
           </div>
-        </div>
-      </section>
-
-      <section id="consultation" className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4">
-             <div className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold">
-                AI-Powered
-              </div>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">Get a Personalized Digital Strategy</h2>
-            <p className="text-lg text-muted-foreground">
-              Not sure where to start? Our AI-powered consultation tool analyzes your business needs to provide instant, tailored recommendations for digital solutions. It's the first step towards a smarter digital future.
-            </p>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <BrainCircuit className="w-5 h-5" />
-              <span>Powered by advanced AI models</span>
-            </div>
-          </div>
-          <Card className="shadow-lg">
-            <CardHeader>
-              <CardTitle className="font-headline text-2xl">Nexora Consultation</CardTitle>
-              <CardDescription>Tell us about your business, and our AI will suggest solutions.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <AiConsultationForm />
-            </CardContent>
-          </Card>
         </div>
       </section>
 

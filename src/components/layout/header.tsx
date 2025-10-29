@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Logo } from '@/components/logo';
-import { cn } from '@/lib/utils';
 import {
   Sheet,
   SheetContent,
@@ -16,7 +15,6 @@ import {
 const navLinks = [
   { href: '#services', label: 'Services' },
   { href: '#showcase', label: 'About' },
-  { href: '#consultation', label: 'Nexora Consultation' },
   { href: '#testimonials', label: 'Testimonials' },
   { href: '#contact', label: 'Contact' },
 ];
@@ -46,7 +44,7 @@ export function Header() {
         
         <div className="hidden md:flex items-center gap-4">
            <Button asChild>
-            <Link href="#consultation">Get a Quote</Link>
+            <Link href="#contact">Get a Quote</Link>
           </Button>
         </div>
 
@@ -83,7 +81,7 @@ export function Header() {
                 </nav>
                 <div className="mt-auto p-4 border-t">
                     <Button asChild className="w-full">
-                        <Link href="#consultation" onClick={() => setIsMobileMenuOpen(false)}>Get a Quote</Link>
+                        <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Get a Quote</Link>
                     </Button>
                 </div>
              </div>
