@@ -14,7 +14,7 @@ export function Footer() {
               <span className="font-headline font-bold text-2xl">Nexora Technologies</span>
             </Link>
             <p className="max-w-md text-secondary-foreground/80">
-              Building the Next Generation of Digital Solutions. We empower businesses for what’s next with smart systems, modern design, and real impact.
+             Your Next Step In Digital Evolution.
             </p>
           </div>
           <div>
