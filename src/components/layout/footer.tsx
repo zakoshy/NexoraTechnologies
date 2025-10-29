@@ -13,7 +13,7 @@ export function Footer() {
               <Logo className="h-10 w-auto" />
               <span className="font-headline font-bold text-2xl">Nexora Technologies</span>
             </Link>
-            <p className="max-w-md text-secondary-foreground/80">
+            <p className="max-w-md text-secondary-foreground/80 italic">
              Your Next Step In Digital Evolution.
             </p>
           </div>
