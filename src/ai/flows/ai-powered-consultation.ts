@@ -9,6 +9,7 @@
  */
 
 import {ai} from '@/ai/genkit';
+import {googleAI} from '@genkit-ai/google-genai';
 import {z} from 'genkit';
 
 const AIPoweredConsultationInputSchema = z.object({
@@ -36,6 +37,7 @@ const prompt = ai.definePrompt({
   name: 'aiPoweredConsultationPrompt',
   input: {schema: AIPoweredConsultationInputSchema},
   output: {schema: AIPoweredConsultationOutputSchema},
+  model: googleAI.model('gemini-1.5-flash-preview'),
   prompt: `You are a digital solutions expert at Nexora Technologies.
 
   Based on the client's business needs, provide tailored recommendations for digital solutions that Nexora Technologies can provide. 
