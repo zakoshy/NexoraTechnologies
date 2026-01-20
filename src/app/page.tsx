@@ -8,6 +8,7 @@ import {
   ShoppingCart,
   Lock,
   ArrowRight,
+  PenTool,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -40,6 +41,12 @@ const services = [
     title: 'Portfolio Creation',
     description:
       'Enable professionals to create and manage stunning digital portfolios that effectively showcase their work and skills.',
+  },
+  {
+    icon: <PenTool className="w-8 h-8 text-primary" />,
+    title: 'Logo Creation',
+    description:
+      'We design unique and memorable logos that represent your brand identity and message.',
   },
   {
     icon: <ShoppingCart className="w-8 h-8 text-primary" />,
