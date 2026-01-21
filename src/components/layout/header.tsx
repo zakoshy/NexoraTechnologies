@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState } from 'react';
@@ -41,12 +40,6 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        
-        <div className="hidden md:flex items-center gap-4">
-           <Button asChild>
-            <Link href="#contact">Get a Quote</Link>
-          </Button>
-        </div>
 
         <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
           <SheetTrigger asChild className="md:hidden">
@@ -67,7 +60,7 @@ export function Header() {
                         <span className="sr-only">Close menu</span>
                     </Button>
                 </div>
-                <nav className="flex flex-col gap-4 p-4 mt-4">
+                <nav className="flex-grow flex flex-col gap-4 p-4 mt-4">
                   {navLinks.map((link) => (
                     <Link
                       key={link.href}
@@ -79,11 +72,6 @@ export function Header() {
                     </Link>
                   ))}
                 </nav>
-                <div className="mt-auto p-4 border-t">
-                    <Button asChild className="w-full">
-                        <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Get a Quote</Link>
-                    </Button>
-                </div>
              </div>
           </SheetContent>
         </Sheet>

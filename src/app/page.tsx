@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import {
   Blocks,
@@ -173,9 +172,6 @@ export default function Home() {
             Empowering Businesses for What’s Next with smart systems, modern design, and real impact.
           </p>
           <div className="mt-8 flex gap-4">
-            <Button asChild size="lg" className="font-semibold">
-              <Link href="#contact">Get a Quote</Link>
-            </Button>
             <Button asChild size="lg" variant="secondary" className="font-semibold">
               <Link href="#services">Our Services</Link>
             </Button>
@@ -282,9 +278,6 @@ export default function Home() {
             <p className="mt-4 max-w-2xl mx-auto text-lg text-secondary-foreground/80">
               Let's build something amazing together. Contact us today to discuss your project and see how Nexora Technologies can help you achieve your goals.
             </p>
-            <Button asChild size="lg" className="mt-8 font-semibold">
-              <Link href="#contact">Get a Quote</Link>
-            </Button>
         </div>
       </section>
     </>
