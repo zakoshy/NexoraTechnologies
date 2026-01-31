@@ -50,7 +50,7 @@ export function ContactForm() {
   useEffect(() => {
     const packageParam = searchParams.get('package');
     if (packageParam) {
-      form.setValue('message', `I'm interested in the ${packageParam} package.`);
+      form.setValue('message', `I have selected the ${packageParam} package. How can we proceed to the next step?`);
     }
   }, [searchParams, form]);
 
