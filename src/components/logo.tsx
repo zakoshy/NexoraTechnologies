@@ -5,7 +5,7 @@ import Image from 'next/image';
 export function Logo({ className }: { className?: string }) {
   return (
     <Image
-      src="/logo.png"
+      src="/Nexora Logo.jpg"
       alt="Nexora Technologies Logo"
       width={32}
       height={32}
