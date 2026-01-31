@@ -31,7 +31,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
           <Card className="border-secondary-foreground/10 bg-background/5 text-secondary-foreground">
             <CardHeader>
               <CardTitle className="font-headline text-2xl text-white">
