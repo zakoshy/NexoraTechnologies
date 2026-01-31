@@ -57,7 +57,7 @@ export function Footer() {
                 <Phone className="mt-1 h-6 w-6 text-primary" />
                 <div>
                   <h4 className="font-semibold text-white">Call Us</h4>
-                  <p>+254 700 123 456</p>
+                  <p>+254 741 157 757</p>
                 </div>
               </div>
 
