@@ -29,6 +29,12 @@
       "description": "A professional real estate consultancy website displayed on a laptop.",
       "imageUrl": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTcwNzMwMzM4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "real estate website"
+    },
+    {
+      "id": "work4",
+      "description": "A chatbot interface on a smartphone screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1555965027-3a4dbacb333c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGF0Ym90fGVufDB8fHx8MTc3MjE1MzI5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chatbot interface"
     }
   ]
 }
