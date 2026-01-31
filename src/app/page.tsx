@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import {
   Blocks,
@@ -11,6 +12,14 @@ import {
   Github,
   ExternalLink,
   Check,
+  CreditCard,
+  Server,
+  LifeBuoy,
+  Users,
+  Sparkles,
+  Heart,
+  ShieldCheck,
+  MapPin,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -60,6 +69,26 @@ const services = [
       'Develop robust Point of Sale (POS) systems with advanced features like inventory management and sales tracking.',
   },
   {
+    icon: <CreditCard className="w-8 h-8 text-primary" />,
+    title: 'Payment System Integration',
+    description: 'Seamless integration of secure payment gateways including PayPal, Mastercard, and M-Pesa.',
+  },
+  {
+    icon: <Server className="w-8 h-8 text-primary" />,
+    title: 'Web Hosting Services',
+    description: 'Reliable and secure web hosting solutions to ensure your website is always online and performing optimally.',
+  },
+  {
+    icon: <LifeBuoy className="w-8 h-8 text-primary" />,
+    title: 'IT Support Services',
+    description: 'Comprehensive IT support including software updates, system maintenance, and software installations.',
+  },
+  {
+    icon: <Users className="w-8 h-8 text-primary" />,
+    title: 'Consultation Services',
+    description: 'Expert consultation to help you navigate the digital landscape and make informed technology decisions.',
+  },
+  {
     icon: <Blocks className="w-8 h-8 text-primary" />,
     title: 'Custom Business Tools',
     description:
@@ -78,6 +107,30 @@ const services = [
       'Monitor website and application performance with an integrated analytics dashboard, providing actionable insights.',
   },
 ];
+
+const corePrinciples = [
+  {
+    icon: <Sparkles className="w-8 h-8 text-primary" />,
+    title: 'Innovation',
+    description: 'We stay at the forefront of technology to deliver creative and cutting-edge solutions that give you a competitive edge.',
+  },
+  {
+    icon: <Heart className="w-8 h-8 text-primary" />,
+    title: 'Client-Centric',
+    description: 'Your success is our priority. We work collaboratively to understand your vision and achieve your goals together.',
+  },
+  {
+    icon: <ShieldCheck className="w-8 h-8 text-primary" />,
+    title: 'Quality & Reliability',
+    description: 'We are committed to building robust, scalable, and secure applications that you can depend on now and in the future.',
+  },
+  {
+    icon: <MapPin className="w-8 h-8 text-primary" />,
+    title: 'Local & Global Reach',
+    description: 'With deep expertise in the local market and a global perspective, we create solutions that resonate with your target audience.',
+  },
+];
+
 
 const recentWorks = [
   {
@@ -233,7 +286,7 @@ export default function Home() {
               We provide a complete suite of digital services to elevate your business. From web development to custom enterprise tools, we build solutions that deliver.
             </p>
           </div>
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <Card key={service.title} className="flex flex-col text-center items-center transition-all hover:shadow-lg hover:-translate-y-1">
                 <CardHeader>
@@ -273,6 +326,32 @@ export default function Home() {
                 className="w-full h-auto object-cover"
               />
             )}
+          </div>
+        </div>
+      </section>
+
+      <section id="why-us" className="py-16 md:py-24 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">Why Choose Nexora?</h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Our core principles drive us to deliver excellence and build lasting partnerships.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {corePrinciples.map((principle) => (
+              <Card key={principle.title} className="flex flex-col text-center items-center transition-all hover:shadow-lg hover:-translate-y-1 bg-background">
+                <CardHeader>
+                  <div className="mx-auto bg-primary/10 p-4 rounded-full">
+                    {principle.icon}
+                  </div>
+                  <CardTitle className="font-headline text-xl pt-4">{principle.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <CardDescription className="text-base">{principle.description}</CardDescription>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
