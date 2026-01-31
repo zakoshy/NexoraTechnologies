@@ -32,9 +32,9 @@
     },
     {
       "id": "work4",
-      "description": "A message icon representing a RAG chatbot.",
-      "imageUrl": "https://images.unsplash.com/photo-1589362281138-e39d8926317b?q=80&w=1080&auto=format&fit=crop",
-      "imageHint": "chat bubbles"
+      "description": "A computer screen with a message icon, representing a RAG chatbot.",
+      "imageUrl": "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1080",
+      "imageHint": "computer message"
     }
   ]
 }
