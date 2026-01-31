@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
 import {
+  Facebook,
   Github,
   Linkedin,
   Mail,
@@ -84,6 +85,13 @@ export function Footer() {
                   >
                     <Github className="h-6 w-6" />
                     <span className="sr-only">GitHub</span>
+                  </Link>
+                  <Link
+                    href="#"
+                    className="text-secondary-foreground/80 hover:text-primary"
+                  >
+                    <Facebook className="h-6 w-6" />
+                    <span className="sr-only">Facebook</span>
                   </Link>
                 </div>
               </div>
