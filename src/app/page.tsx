@@ -170,42 +170,42 @@ const recentWorks = [
 const pricingPackages = [
   {
     title: 'Starter Site',
-    price: 'From KES 45,000',
-    description: 'Perfect for individuals and small businesses.',
+    price: 'KES 15,000 - 30,000',
+    description: 'Perfect for individuals and small businesses getting started.',
     features: [
       'Custom Responsive Design',
       'Up to 5 Pages',
-      'Contact Form',
+      'Contact Form Integration',
       'Basic SEO Setup',
-      'Social Media Integration',
+      'Social Media Links',
     ],
     popular: false,
   },
   {
     title: 'Business Pro',
-    price: 'From KES 90,000',
+    price: 'KES 35,000 - 80,000',
     description: 'Advanced features for growing businesses.',
     features: [
       'All features in Starter Site',
       'Up to 15 Pages',
       'Logo Design',
-      'Blog & CMS Integration',
-      'E-commerce Functionality (up to 20 products)',
+      'CMS for Blog/Updates',
+      'E-commerce (up to 20 products)',
       'Payment Gateway Integration',
     ],
     popular: true,
   },
   {
     title: 'Custom Enterprise',
-    price: 'Contact Us',
-    description: 'Tailored solutions for unique business needs.',
+    price: 'Contact for Quote',
+    description: 'Tailored solutions for unique & large-scale needs.',
     features: [
       'All features in Business Pro',
       'Unlimited Pages & Products',
-      'Custom Business Tools',
+      'Custom Business Tools (CRM, etc.)',
       'Advanced POS Systems',
-      'Dedicated Client Portal',
-      'Priority Support',
+      'Dedicated Client Portal & Support',
+      'AI Chatbot Integration',
     ],
     popular: false,
   },
@@ -466,7 +466,7 @@ export default function Home() {
               Choose a plan that works for you. All our packages are customizable to fit your exact requirements.
             </p>
           </div>
-          <div className="mt-12 grid gap-8 md:grid-cols-1 lg:grid-cols-3 items-start max-w-5xl mx-auto">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-start max-w-5xl mx-auto">
             {pricingPackages.map((pkg) => (
               <Card key={pkg.title} className={cn("flex flex-col h-full transition-all hover:shadow-lg hover:-translate-y-1", pkg.popular ? "border-primary shadow-lg" : "")}>
                 {pkg.popular && <Badge className="absolute -top-3 right-4">Most Popular</Badge>}
