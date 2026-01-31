@@ -24,6 +24,7 @@ import {
   Heart,
   ShieldCheck,
   MapPin,
+  Bot,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -97,6 +98,12 @@ const services = [
     title: 'Custom Business Tools',
     description:
       'Design and build custom tools to streamline your operations, enhance productivity, and drive business growth.',
+  },
+  {
+    icon: <Bot className="w-8 h-8 text-primary" />,
+    title: 'AI Integration',
+    description:
+      'We provide AI-powered solutions, including the development of intelligent chatbots to enhance customer engagement.',
   },
   {
     icon: <Lock className="w-8 h-8 text-primary" />,
