@@ -32,7 +32,7 @@ export default function RootLayout({
         <Footer />
         <Toaster />
         <Link href="https://wa.me/254700123456" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-colors">
-          <Image src="/whatsapp.png" alt="WhatsApp" width={32} height={32} />
+          <Image src="/whatsapp.jpg" alt="WhatsApp" width={32} height={32} />
         </Link>
       </body>
     </html>
