@@ -169,8 +169,8 @@ const recentWorks = [
     title: 'RAG Chatbot',
     description: 'A language model trained to answer questions based on a specific set of documents, using the RAG technique. It provides errors for out-of-scope questions.',
     image: PlaceHolderImages.find((p) => p.id === 'work4'),
-    liveDemoUrl: '#',
-    githubUrl: '#',
+    liveDemoUrl: 'https://empowersyouthchatbot.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/empowersyouthchatbot',
   },
 ];
 
