@@ -1,5 +1,8 @@
+'use client';
 
 import Image from 'next/image';
+import * as React from 'react';
+import Autoplay from 'embla-carousel-autoplay';
 import {
   Blocks,
   CodeXml,
@@ -249,6 +252,10 @@ const heroImage = PlaceHolderImages.find((p) => p.id === 'hero');
 const showcaseImage = PlaceHolderImages.find((p) => p.id === 'showcase');
 
 export default function Home() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: true })
+  );
+
   return (
     <>
       <section id="home" className="relative h-[calc(100vh-4rem)] w-full">
@@ -408,8 +415,11 @@ export default function Home() {
             </p>
           </div>
           <Carousel
+            plugins={[plugin.current]}
             opts={{ align: "start", loop: true }}
             className="w-full mt-12"
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
           >
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
