@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -253,7 +254,7 @@ const showcaseImage = PlaceHolderImages.find((p) => p.id === 'showcase');
 
 export default function Home() {
   const plugin = React.useRef(
-    Autoplay({ delay: 4000, stopOnInteraction: true })
+    Autoplay({ delay: 4000, stopOnInteraction: false })
   );
 
   return (
