@@ -271,6 +271,9 @@ export default function Home() {
             Empowering Businesses for What’s Next with smart systems, modern design, and real impact.
           </p>
           <div className="mt-8 flex gap-4">
+            <Button asChild size="lg" className="font-semibold">
+              <Link href="#contact">Contact Us</Link>
+            </Button>
             <Button asChild size="lg" variant="secondary" className="font-semibold">
               <Link href="#services">Our Services</Link>
             </Button>
@@ -447,7 +450,7 @@ export default function Home() {
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-1 lg:grid-cols-3 items-start max-w-5xl mx-auto">
             {pricingPackages.map((pkg) => (
-              <Card key={pkg.title} className={cn("flex flex-col h-full", pkg.popular ? "border-primary shadow-lg" : "")}>
+              <Card key={pkg.title} className={cn("flex flex-col h-full transition-all hover:shadow-lg hover:-translate-y-1", pkg.popular ? "border-primary shadow-lg" : "")}>
                 {pkg.popular && <Badge className="absolute -top-3 right-4">Most Popular</Badge>}
                 <CardHeader>
                   <CardTitle className="font-headline text-2xl">{pkg.title}</CardTitle>
