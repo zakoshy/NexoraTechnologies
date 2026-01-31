@@ -32,9 +32,9 @@
     },
     {
       "id": "work4",
-      "description": "An AI agent representing a RAG chatbot.",
-      "imageUrl": "https://images.unsplash.com/photo-1678483749019-a93c7895197a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "AI agent"
+      "description": "A message icon representing a RAG chatbot.",
+      "imageUrl": "https://images.unsplash.com/photo-1589530491173-01a8e3703953?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "message icon"
     }
   ]
 }
