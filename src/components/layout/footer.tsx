@@ -1,54 +1,117 @@
 
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import {
+  Github,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Twitter,
+} from 'lucide-react';
+import { ContactForm } from '@/components/contact-form';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 
 export function Footer() {
   return (
     <footer id="contact" className="bg-secondary text-secondary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="flex flex-col gap-4 md:col-span-2">
-            <Link href="/" className="flex items-center gap-2 w-fit">
-              <Logo className="h-10 w-auto" />
-              <span className="font-headline font-bold text-2xl">Nexora Technologies</span>
-            </Link>
-            <p className="max-w-md text-secondary-foreground/80 italic">
-             Your Next Step In Digital Evolution.
-            </p>
-          </div>
+      <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="mx-auto mb-12 max-w-3xl text-center">
+          <h2 className="font-headline text-3xl font-bold md:text-4xl">
+            Get In Touch
+          </h2>
+          <p className="mt-4 text-lg text-secondary-foreground/80">
+            Have a project in mind or just want to say hello? We'd love to hear
+            from you.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+          <Card className="border-secondary-foreground/10 bg-background/5 text-secondary-foreground">
+            <CardHeader>
+              <CardTitle className="font-headline text-2xl text-white">
+                Contact Information
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6 text-secondary-foreground/80">
+              <div className="flex items-start gap-4">
+                <MapPin className="mt-1 h-6 w-6 text-primary" />
+                <div>
+                  <h4 className="font-semibold text-white">Our Office</h4>
+                  <p>123 Digital Avenue, Nairobi, Kenya</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <Mail className="mt-1 h-6 w-6 text-primary" />
+                <div>
+                  <h4 className="font-semibold text-white">Email Us</h4>
+                  <p>contact@nexora.tech</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <Phone className="mt-1 h-6 w-6 text-primary" />
+                <div>
+                  <h4 className="font-semibold text-white">Call Us</h4>
+                  <p>+254 700 123 456</p>
+                </div>
+              </div>
+
+              <div className="pt-4">
+                <h4 className="mb-4 font-semibold text-white">Follow Us</h4>
+                <div className="flex items-center gap-4">
+                  <Link
+                    href="#"
+                    className="text-secondary-foreground/80 hover:text-primary"
+                  >
+                    <Twitter className="h-6 w-6" />
+                    <span className="sr-only">Twitter</span>
+                  </Link>
+                  <Link
+                    href="#"
+                    className="text-secondary-foreground/80 hover:text-primary"
+                  >
+                    <Linkedin className="h-6 w-6" />
+                    <span className="sr-only">LinkedIn</span>
+                  </Link>
+                  <Link
+                    href="#"
+                    className="text-secondary-foreground/80 hover:text-primary"
+                  >
+                    <Github className="h-6 w-6" />
+                    <span className="sr-only">GitHub</span>
+                  </Link>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
           <div>
-            <h3 className="font-headline font-semibold text-lg">Quick Links</h3>
-            <ul className="mt-4 space-y-2">
-              <li><Link href="#services" className="text-secondary-foreground/80 hover:text-primary">Services</Link></li>
-              <li><Link href="#showcase" className="text-secondary-foreground/80 hover:text-primary">About Us</Link></li>
-              <li><Link href="#why-us" className="text-secondary-foreground/80 hover:text-primary">Why Us</Link></li>
-              <li><Link href="#works" className="text-secondary-foreground/80 hover:text-primary">Works</Link></li>
-              <li><Link href="#testimonials" className="text-secondary-foreground/80 hover:text-primary">Testimonials</Link></li>
-              <li><Link href="#pricing" className="text-secondary-foreground/80 hover:text-primary">Pricing</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-headline font-semibold text-lg">Connect</h3>
-            <div className="flex items-center gap-4 mt-4">
-              <Link href="#" className="text-secondary-foreground/80 hover:text-primary">
-                <Twitter className="w-6 h-6" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#" className="text-secondary-foreground/80 hover:text-primary">
-                <Linkedin className="w-6 h-6" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-              <Link href="#" className="text-secondary-foreground/80 hover:text-primary">
-                <Github className="w-6 h-6" />
-                <span className="sr-only">GitHub</span>
-              </Link>
-            </div>
-            <p className="mt-4 text-secondary-foreground/80">contact@nexora.tech</p>
+            <h3 className="mb-6 font-headline text-2xl font-bold text-white">
+              Send Us a Message
+            </h3>
+            <ContactForm />
           </div>
         </div>
-        <div className="mt-8 border-t border-secondary-foreground/20 pt-8 text-center text-sm text-secondary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Nexora Technologies. All Rights Reserved.</p>
+
+        <div className="mt-16 border-t border-secondary-foreground/20 pt-8 text-center text-sm text-secondary-foreground/60">
+          <Link
+            href="/"
+            className="mx-auto mb-4 flex w-fit items-center gap-2"
+          >
+            <Logo className="h-8 w-auto" />
+            <span className="font-headline text-xl font-bold">
+              Nexora Technologies
+            </span>
+          </Link>
+          <p>
+            &copy; {new Date().getFullYear()} Nexora Technologies. All Rights
+            Reserved.
+          </p>
         </div>
       </div>
     </footer>

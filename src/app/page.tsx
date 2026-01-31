@@ -476,15 +476,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section id="cta" className="py-16 md:py-24 bg-secondary text-secondary-foreground">
-        <div className="container mx-auto px-4 text-center">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">Ready to Elevate Your Digital Presence?</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-secondary-foreground/80">
-              Let's build something amazing together. Contact us today to discuss your project and see how Nexora Technologies can help you achieve your goals.
-            </p>
-        </div>
-      </section>
     </>
   );
 }
