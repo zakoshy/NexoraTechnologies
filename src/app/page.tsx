@@ -489,7 +489,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                   <Button asChild size="lg" className="w-full font-semibold" variant={pkg.popular ? "default" : "secondary"}>
-                    <Link href={`#contact?package=${encodeURIComponent(pkg.title)}`}>Contact Us</Link>
+                    <Link href={`/?package=${encodeURIComponent(pkg.title)}#contact`}>Contact Us</Link>
                   </Button>
                 </CardFooter>
               </Card>
