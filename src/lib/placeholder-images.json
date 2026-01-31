@@ -20,15 +20,15 @@
     },
     {
       "id": "work2",
-      "description": "E-commerce website for a fashion brand.",
-      "imageUrl": "https://images.unsplash.com/photo-1629828367197-023c0839beba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWNvbW1lcmNlJTIwZmFzaGlvbnxlbnwwfHx8fDE3Njk4NDkzNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ecommerce fashion"
+      "description": "An illustration of social media content creation, representing an AI tool for social media managers.",
+      "imageUrl": "https://images.unsplash.com/photo-1616469829935-c2f334a8a56b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzb2NpYWwlMjBtZWRpYSUyMGNvbnRlbnR8ZW58MHx8fHwxNzcwMjgxNzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "social media content"
     },
     {
       "id": "work3",
-      "description": "Mobile application for a food delivery service.",
-      "imageUrl": "https://images.unsplash.com/photo-1542641728-6ca359b085f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2JpbGUlMjBhcHB8ZW58MHx8fHwxNzY5Nzk0MzI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "mobile app"
+      "description": "A professional real estate consultancy website displayed on a laptop.",
+      "imageUrl": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTcwNzMwMzM4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "real estate website"
     }
   ]
 }
