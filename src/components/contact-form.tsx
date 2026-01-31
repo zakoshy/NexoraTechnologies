@@ -45,25 +45,32 @@ export function ContactForm() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    startTransition(async () => {
-      const result = await sendReview(values);
-
-      if (result.success) {
+    startTransition(() => {
+      sendReview(values).then((result) => {
+        if (result.success) {
+          toast({
+            title: 'Message Sent!',
+            description:
+              'Thank you for your feedback. We will get back to you shortly.',
+          });
+          form.reset();
+        } else {
+          toast({
+            variant: 'destructive',
+            title: 'Uh oh! Something went wrong.',
+            description:
+              result.message ||
+              'There was a problem with your request. Please try again.',
+          });
+        }
+      }).catch(() => {
         toast({
-          title: 'Message Sent!',
-          description:
-            'Thank you for your feedback. We will get back to you shortly.',
-        });
-        form.reset();
-      } else {
-        toast({
-          variant: 'destructive',
-          title: 'Uh oh! Something went wrong.',
-          description:
-            result.message ||
-            'There was a problem with your request. Please try again.',
-        });
-      }
+            variant: 'destructive',
+            title: 'Uh oh! Something went wrong.',
+            description:
+              'There was a problem with your request. Please try again.',
+          });
+      });
     });
   }
 
