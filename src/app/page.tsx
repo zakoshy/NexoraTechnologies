@@ -259,26 +259,26 @@ export default function Home() {
 
   return (
     <>
-      <section id="home" className="relative h-[calc(100vh-4rem)] w-full">
+      <section id="home" className="relative h-[calc(100vh-4rem)] w-full overflow-hidden">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
             alt={heroImage.description}
             data-ai-hint={heroImage.imageHint}
             fill
-            className="object-cover object-center brightness-50"
+            className="object-cover object-center brightness-50 animate-in zoom-in-[1.02] duration-2000 ease-out"
             priority
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-4">
-          <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold text-foreground">
+          <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold text-foreground animate-in fade-in slide-in-from-bottom-12 duration-1000 ease-out">
             Building the Next Generation of Digital Solutions.
           </h1>
-          <p className="mt-4 max-w-2xl text-lg text-muted-foreground md:text-xl">
+          <p className="mt-4 max-w-2xl text-lg text-muted-foreground md:text-xl animate-in fade-in slide-in-from-bottom-10 duration-1000 ease-out delay-200">
             Empowering Businesses for What’s Next with smart systems, modern design, and real impact.
           </p>
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex gap-4 animate-in fade-in slide-in-from-bottom-8 duration-1000 ease-out delay-400">
             <Button asChild size="lg" className="font-semibold">
               <Link href="#contact">Contact Us</Link>
             </Button>
