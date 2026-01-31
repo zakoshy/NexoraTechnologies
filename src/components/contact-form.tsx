@@ -17,7 +17,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { sendReview } from '@/app/actions';
 import { Loader2 } from 'lucide-react';
-import { useTransition } from 'react';
+import { useTransition, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -43,6 +44,16 @@ export function ContactForm() {
       message: '',
     },
   });
+
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const packageParam = searchParams.get('package');
+    if (packageParam) {
+      form.setValue('message', `I'm interested in the ${packageParam} package.`);
+    }
+  }, [searchParams, form]);
+
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     startTransition(() => {

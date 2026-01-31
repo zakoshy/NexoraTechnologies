@@ -17,6 +17,28 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { Suspense } from 'react';
+import { Skeleton } from '../ui/skeleton';
+
+function ContactFormSkeleton() {
+  return (
+    <div className="space-y-6">
+      <div className="space-y-2">
+        <Skeleton className="h-4 w-[50px]" />
+        <Skeleton className="h-10 w-full" />
+      </div>
+      <div className="space-y-2">
+        <Skeleton className="h-4 w-[50px]" />
+        <Skeleton className="h-10 w-full" />
+      </div>
+      <div className="space-y-2">
+        <Skeleton className="h-4 w-[150px]" />
+        <Skeleton className="h-20 w-full" />
+      </div>
+      <Skeleton className="h-11 w-full" />
+    </div>
+  );
+}
 
 export function Footer() {
   return (
@@ -43,22 +65,22 @@ export function Footer() {
               <div className="flex items-start gap-4">
                 <MapPin className="mt-1 h-6 w-6 text-primary" />
                 <div>
-                  <h4 className="font-semibold text-white">Our Office</h4>
-                  <p>123 Digital Avenue, Nairobi, Kenya</p>
+                  <h4 className="font-semibold text-white">Location </h4>
+                  <p>Mombasa, Kenya</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <Mail className="mt-1 h-6 w-6 text-primary" />
                 <div>
                   <h4 className="font-semibold text-white">Email Us</h4>
-                  <p>contact@nexora.tech</p>
+                  <p>edwinoshome37@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <Phone className="mt-1 h-6 w-6 text-primary" />
                 <div>
                   <h4 className="font-semibold text-white">Call Us</h4>
-                  <p>+254 741 157 757</p>
+                  <p>+254 741 157 757 <br /> +254 792 294 870</p>
                 </div>
               </div>
 
@@ -66,28 +88,28 @@ export function Footer() {
                 <h4 className="mb-4 font-semibold text-white">Follow Us</h4>
                 <div className="flex items-center gap-4">
                   <Link
-                    href="#"
+                    href="https://x.com/EdwinOshome1274"
                     className="text-secondary-foreground/80 hover:text-primary"
                   >
                     <Twitter className="h-6 w-6" />
                     <span className="sr-only">Twitter</span>
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.linkedin.com/in/edwin-oshome-b627b52b5/"
                     className="text-secondary-foreground/80 hover:text-primary"
                   >
                     <Linkedin className="h-6 w-6" />
                     <span className="sr-only">LinkedIn</span>
                   </Link>
                   <Link
-                    href="#"
+                    href="https://github.com/zakoshy"
                     className="text-secondary-foreground/80 hover:text-primary"
                   >
                     <Github className="h-6 w-6" />
                     <span className="sr-only">GitHub</span>
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.facebook.com/edwin.oshy/"
                     className="text-secondary-foreground/80 hover:text-primary"
                   >
                     <Facebook className="h-6 w-6" />
@@ -102,7 +124,9 @@ export function Footer() {
             <h3 className="mb-6 font-headline text-2xl font-bold text-white">
               Send Us a Message
             </h3>
-            <ContactForm />
+            <Suspense fallback={<ContactFormSkeleton />}>
+              <ContactForm />
+            </Suspense>
           </div>
         </div>
 

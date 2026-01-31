@@ -145,25 +145,25 @@ const corePrinciples = [
 
 const recentWorks = [
   {
-    title: 'Project Management Dashboard',
-    description: 'A comprehensive dashboard for teams to track tasks, progress, and milestones in real-time.',
+    title: 'Proffesional Website',
+    description: 'A corporate website created for a youth group that helps them track their growth through contributons monthly. it also include AI features ',
     image: PlaceHolderImages.find((p) => p.id === 'work1'),
-    liveDemoUrl: '#',
-    githubUrl: '#',
+    liveDemoUrl: 'https://empowers-youth-group.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/Empowers-Youth-Group',
   },
   {
-    title: 'Chic Boutique E-commerce',
-    description: 'A stylish and user-friendly online store for a fashion brand, complete with a secure payment gateway.',
+    title: 'Content AI ',
+    description: 'An AI that was created to help social media managers to generate content of their companies and post to different social media platforms like: Facebook, LinkedIn, X, Instagram etc',
     image: PlaceHolderImages.find((p) => p.id === 'work2'),
-    liveDemoUrl: '#',
-    githubUrl: '#',
+    liveDemoUrl: 'https://contentflow-roan.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/contentflow',
   },
   {
-    title: 'FoodieFast Delivery App',
-    description: 'A mobile application that connects users with local restaurants for quick and easy food delivery.',
+    title: 'Consultancy Website',
+    description: 'A consultancy website that was created incorporating the payment systems like Mastercard, Mpesa and Paypal. The website is for real-estate consultancy',
     image: PlaceHolderImages.find((p) => p.id === 'work3'),
-    liveDemoUrl: '#',
-    githubUrl: '#',
+    liveDemoUrl: 'https://vgrise.co.ke/',
+    githubUrl: 'https://github.com/zakoshy/Vanguard-rise-limited',
   },
 ];
 
@@ -177,7 +177,7 @@ const pricingPackages = [
       'Up to 5 Pages',
       'Contact Form Integration',
       'Basic SEO Setup',
-      'Social Media Links',
+      'Social Media Links(Basic).',
     ],
     popular: false,
   },
@@ -489,7 +489,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                   <Button asChild size="lg" className="w-full font-semibold" variant={pkg.popular ? "default" : "secondary"}>
-                    <Link href="#contact">Contact Us</Link>
+                    <Link href={`#contact?package=${encodeURIComponent(pkg.title)}`}>Contact Us</Link>
                   </Button>
                 </CardFooter>
               </Card>

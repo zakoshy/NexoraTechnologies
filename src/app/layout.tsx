@@ -31,7 +31,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <Toaster />
-        <Link href="https://wa.me/254741157757" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-colors">
+        <Link href="https://wa.me/254741157757?text=hello%20the%20CEO%20of%20nexora%20i%20need%20your%20services" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-colors">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
