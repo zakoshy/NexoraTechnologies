@@ -8,12 +8,16 @@ import {
   Lock,
   ArrowRight,
   PenTool,
+  Github,
+  ExternalLink,
+  Check,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
@@ -27,6 +31,8 @@ import {
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { cn } from '@/lib/utils';
+import { Badge } from '@/components/ui/badge';
 
 const services = [
   {
@@ -73,6 +79,74 @@ const services = [
   },
 ];
 
+const recentWorks = [
+  {
+    title: 'Project Management Dashboard',
+    description: 'A comprehensive dashboard for teams to track tasks, progress, and milestones in real-time.',
+    image: PlaceHolderImages.find((p) => p.id === 'work1'),
+    liveDemoUrl: '#',
+    githubUrl: '#',
+  },
+  {
+    title: 'Chic Boutique E-commerce',
+    description: 'A stylish and user-friendly online store for a fashion brand, complete with a secure payment gateway.',
+    image: PlaceHolderImages.find((p) => p.id === 'work2'),
+    liveDemoUrl: '#',
+    githubUrl: '#',
+  },
+  {
+    title: 'FoodieFast Delivery App',
+    description: 'A mobile application that connects users with local restaurants for quick and easy food delivery.',
+    image: PlaceHolderImages.find((p) => p.id === 'work3'),
+    liveDemoUrl: '#',
+    githubUrl: '#',
+  },
+];
+
+const pricingPackages = [
+  {
+    title: 'Starter Site',
+    price: 'From KES 45,000',
+    description: 'Perfect for individuals and small businesses.',
+    features: [
+      'Custom Responsive Design',
+      'Up to 5 Pages',
+      'Contact Form',
+      'Basic SEO Setup',
+      'Social Media Integration',
+    ],
+    popular: false,
+  },
+  {
+    title: 'Business Pro',
+    price: 'From KES 90,000',
+    description: 'Advanced features for growing businesses.',
+    features: [
+      'All features in Starter Site',
+      'Up to 15 Pages',
+      'Logo Design',
+      'Blog & CMS Integration',
+      'E-commerce Functionality (up to 20 products)',
+      'Payment Gateway Integration',
+    ],
+    popular: true,
+  },
+  {
+    title: 'Custom Enterprise',
+    price: 'Contact Us',
+    description: 'Tailored solutions for unique business needs.',
+    features: [
+      'All features in Business Pro',
+      'Unlimited Pages & Products',
+      'Custom Business Tools',
+      'Advanced POS Systems',
+      'Dedicated Client Portal',
+      'Priority Support',
+    ],
+    popular: false,
+  },
+];
+
 const testimonials = [
   {
     name: 'Jomo K.',
@@ -115,34 +189,6 @@ const testimonials = [
     quote:
       "The client portal is fantastic. It has improved communication with our B2B partners and made order tracking seamless. A very professional and well-executed project.",
     avatar: 'https://picsum.photos/seed/nyambura/40/40',
-  },
-  {
-    name: 'Kiprono C.',
-    title: 'Co-founder, EdTech Innovators',
-    quote:
-      "Nexora's team provided a comprehensive digital strategy that aligned perfectly with our goals. Their AI consultation was spot on, guiding us to the right solutions.",
-    avatar: 'https://picsum.photos/seed/kiprono/40/40',
-  },
-  {
-    name: 'Fatuma A.',
-    title: 'Logistics Head, Coastline Freight',
-    quote:
-      "The custom logistics tool has optimized our routing and scheduling, leading to significant cost savings. Nexora's expertise in building business tools is top-notch.",
-    avatar: 'https://picsum.photos/seed/fatuma/40/40',
-  },
-  {
-    name: 'Baraka S.',
-    title: 'Artist & Designer',
-    quote:
-      "From the first consultation to the final launch, the experience was smooth and collaborative. They understood my artistic vision for my digital presence perfectly.",
-    avatar: 'https://picsum.photos/seed/baraka/40/40',
-  },
-  {
-    name: 'Imani W.',
-    title: 'Director, Tausi Beauty',
-    quote:
-      "Our web app has received amazing feedback for its design and usability. Nexora Technologies delivered a world-class product that represents our brand beautifully.",
-    avatar: 'https://picsum.photos/seed/imani/40/40',
   },
 ];
 
@@ -187,7 +233,7 @@ export default function Home() {
               We provide a complete suite of digital services to elevate your business. From web development to custom enterprise tools, we build solutions that deliver.
             </p>
           </div>
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {services.map((service) => (
               <Card key={service.title} className="flex flex-col text-center items-center transition-all hover:shadow-lg hover:-translate-y-1">
                 <CardHeader>
@@ -231,6 +277,46 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="works" className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Recent Works</h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Check out some of the projects we're proud to have delivered.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {recentWorks.map((work) => (
+              <Card key={work.title} className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
+                {work.image && (
+                  <div className="aspect-video relative">
+                    <Image
+                      src={work.image.imageUrl}
+                      alt={work.image.description}
+                      data-ai-hint={work.image.imageHint}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+                <CardHeader>
+                  <CardTitle className="font-headline text-xl">{work.title}</CardTitle>
+                  <CardDescription className="text-base">{work.description}</CardDescription>
+                </CardHeader>
+                <CardFooter className="mt-auto pt-0 gap-4">
+                  <Button asChild className="flex-1">
+                    <Link href={work.liveDemoUrl}>Live Demo <ExternalLink className="ml-2" /></Link>
+                  </Button>
+                  <Button asChild variant="outline" className="flex-1">
+                    <Link href={work.githubUrl}>GitHub <Github className="ml-2" /></Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+      
       <section id="testimonials" className="py-16 md:py-24 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
@@ -269,6 +355,46 @@ export default function Home() {
             <CarouselPrevious className="ml-12" />
             <CarouselNext className="mr-12" />
           </Carousel>
+        </div>
+      </section>
+
+      <section id="pricing" className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">Transparent Pricing for Every Need</h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Choose a plan that works for you. All our packages are customizable to fit your exact requirements.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-1 lg:grid-cols-3 items-start max-w-5xl mx-auto">
+            {pricingPackages.map((pkg) => (
+              <Card key={pkg.title} className={cn("flex flex-col h-full", pkg.popular ? "border-primary shadow-lg" : "")}>
+                {pkg.popular && <Badge className="absolute -top-3 right-4">Most Popular</Badge>}
+                <CardHeader>
+                  <CardTitle className="font-headline text-2xl">{pkg.title}</CardTitle>
+                  <CardDescription>{pkg.description}</CardDescription>
+                  <div className="pt-4">
+                    <span className="text-3xl font-bold">{pkg.price}</span>
+                  </div>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <ul className="space-y-3">
+                    {pkg.features.map((feature, index) => (
+                      <li key={index} className="flex items-center gap-3">
+                        <Check className="w-5 h-5 text-primary" />
+                        <span className="text-muted-foreground">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild size="lg" className="w-full font-semibold" variant={pkg.popular ? "default" : "secondary"}>
+                    <Link href="#contact">Contact Us</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
