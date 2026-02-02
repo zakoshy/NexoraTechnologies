@@ -61,8 +61,8 @@ We provide a complete suite of digital services designed to elevate your busines
 
 Interested in working with Nexora or learning more about our services?
 
-📧 Email: *[your-email@example.com]*  
-🌐 Website: *[your-website-url]*  
+📧 Email : edwinoshome37@gmail.com 
+🌐 Website:https://nexora-technologies-eight.vercel.app/  
 
 ---
 
