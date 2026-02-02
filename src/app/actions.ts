@@ -7,7 +7,8 @@ export async function sendReview(formData: {
 }): Promise<{ success: boolean; message: string }> {
   try {
     // In a real application, you would integrate an email service like Resend, SendGrid, or Nodemailer.
-    // For this example, we'll just log the data to the console.
+    // For this example, we'll just log the data to the console to simulate sending an email
+    // to edwinoshome37@gmail.com.
     console.log('New review received:');
     console.log('Name:', formData.name);
     console.log('Email:', formData.email);
