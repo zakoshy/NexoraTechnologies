@@ -145,7 +145,7 @@ const corePrinciples = [
 
 const recentWorks = [
   {
-    title: 'Proffesional Website',
+    title: 'Professional Website',
     description: 'A corporate website created for a youth group that helps them track their growth through contributons monthly. it also include AI features ',
     image: PlaceHolderImages.find((p) => p.id === 'work1'),
     liveDemoUrl: 'https://empowers-youth-group.vercel.app/',
@@ -171,6 +171,13 @@ const recentWorks = [
     image: PlaceHolderImages.find((p) => p.id === 'work4'),
     liveDemoUrl: 'https://empowersyouthchatbot.vercel.app/',
     githubUrl: 'https://github.com/zakoshy/empowersyouthchatbot',
+  },
+  {
+    title: 'Hotel Website',
+    description: 'A hotel website created to promote both international and local tourism.',
+    image: PlaceHolderImages.find((p) => p.id === 'work5'),
+    liveDemoUrl: 'https://coast-hotel.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/coast-hotel',
   },
 ];
 
