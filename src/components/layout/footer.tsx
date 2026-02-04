@@ -73,7 +73,7 @@ export function Footer() {
                 <Mail className="mt-1 h-6 w-6 text-primary" />
                 <div>
                   <h4 className="font-semibold text-white">Email Us</h4>
-                  <p>edwinoshome37@gmail.com</p>
+                  <p>nexoratechnologies.ke@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
