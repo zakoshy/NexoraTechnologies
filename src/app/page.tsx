@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -178,6 +177,20 @@ const recentWorks = [
     image: PlaceHolderImages.find((p) => p.id === 'work5'),
     liveDemoUrl: 'https://coast-hotel.vercel.app/',
     githubUrl: 'https://github.com/zakoshy/coast-hotel',
+  },
+  {
+    title: 'Timber Sales Company',
+    description: 'A digital solution for a timber sales company, streamlining inventory tracking and sales operations.',
+    image: PlaceHolderImages.find((p) => p.id === 'work6'),
+    liveDemoUrl: 'https://timber-sales.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/timber-sales',
+  },
+  {
+    title: 'Al-Zia Motors',
+    description: 'A modern automotive marketplace for Al-Zia Motors, featuring detailed vehicle listings and a seamless user experience.',
+    image: PlaceHolderImages.find((p) => p.id === 'work7'),
+    liveDemoUrl: 'https://al-zia-motors.vercel.app/',
+    githubUrl: 'https://github.com/zakoshy/AL-ZIA-MOTORS',
   },
 ];
 
